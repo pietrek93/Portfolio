@@ -1,0 +1,85 @@
+.contact{
+    max-width: 100%;
+    background-color: $dark;
+    padding: 70px 0;
+}
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    h2{
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        color: $grey-lighter;
+        }
+    .line{
+        border-top: solid 2px $blue;
+        width: 100px;
+        padding-bottom: 35px;
+        }
+    p{
+        font-size: 1.5rem;
+        padding: 70px 0;
+        color: $grey-lighter;
+        }
+    }
+.contact-content{
+    padding: 35px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
+.icon_social{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        border-bottom: solid 1px $blue;}
+    i{
+        color: $grey-lighter;
+        font-size: 4em;
+        padding-bottom: 20px;
+        
+        }
+    }
+
+.contact-more{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    p{
+        font-size: 1.2rem;
+        color: $grey-lighter;
+        padding-bottom: 20px;
+        }
+    }
+
+@media screen and (max-width: 900px){
+.contact-content{
+  
+    width: 90%;
+    justify-content: space-around;
+    
+    }
+ .contact-more{
+    width: 60%;
+    
+ }  
+} 
+@media screen and (max-width: 400px){
+
+ .contact-more{
+    width: 90%;
+    
+ }  
+} 

@@ -1,0 +1,120 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-image: url("../images/home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.home-content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    position: relative; 
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    color: #ffffff;
+    h1{
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700px;
+        margin: 10px 0;
+        height: 50px;
+        
+        }
+    h5{
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .1em solid $blue;
+        margin: 10px auto;
+        height: 40px;
+        font-size: 2rem;
+        animation: 
+            typing 3s steps(40, end),
+            blink-caret .60s step-end infinite;
+        }
+}
+@keyframes typing{ 
+  from { width: 0 }
+  to { width: 100% } 
+}
+
+@keyframes blink-caret{
+  from, to { border-color: transparent }
+  50% { border-color: $blue; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+// .content{
+    
+//     height: 100%;
+//     width: 100%;
+//     background-image: url("../images/code.png");
+//     background-color: rgb(30, 30, 30);
+//     background-position: center bottom;
+//     background-size: auto;
+//     background-repeat: no-repeat; 
+//     background-size: auto;
+//     z-index: -1;
+//     }
+
+
+@media screen and (max-width: 630px){
+  .home-content{  
+    h1{
+        font-size: 3rem;
+        }
+    h5{
+        font-size: 2rem;
+        }
+    }
+
+}
+    
+@media screen and (max-width: 500px){
+.home-content{ 
+    h1{
+        font-size: 2.5rem;
+        }
+    h5{
+        font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 430px){
+    .home-content{ 
+    h1{
+        font-size: 2rem;
+        }
+    h5{
+        font-size: 1rem;
+        height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 335px){
+    .home-content{ 
+    h1{
+        font-size: 1.5rem;
+        }
+    h5{
+        font-size: 1rem;
+        height: 20px;
+        }
+    }
+}

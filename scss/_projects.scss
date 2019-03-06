@@ -1,0 +1,235 @@
+.projects{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+.project-content{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    padding: 70px 0;
+    background-color: $grey;
+    color: #fff;
+}
+.project-header{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    
+    h2{
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+
+        }
+    .line{
+        border-top: solid 2px $blue;
+        width: 100px;
+        padding-bottom: 35px;
+        
+        }          
+    }
+
+.project-bg{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    overflow: hidden;
+    padding:20px 40px;
+    background-image: url("../images/project.png");
+    background-position: right top 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-origin: padding-box;
+    
+    }
+
+.project-element{
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+
+
+.project-link{
+    width:70%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $grey-lighter;
+    }
+.project-1{
+    background-image: url("../images/project1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    }
+.project-2{
+    background-image: url("../images/project2.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    }
+.project-3{
+    background-image: url("../images/project3.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    }
+.project-4{
+    background-image: url("../images/project4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    }
+.link{
+    width:50%;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    a{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &:hover{
+            background-color: rgba(28, 28, 28, 0.2);}
+        i{
+            font-size: 3em;
+            color: $grey;
+            padding: 20px;
+            }
+    }
+}
+.project-desc{
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $blue;
+    h3{
+        text-align: center;
+        padding: 0.5em 1em;
+        }
+    p{
+        text-align: center;
+        padding: 0 2em;
+        }
+    }
+
+@media screen and (max-width: 900px){
+
+    .projects{
+    flex-direction: column-reverse;
+    
+    }    
+    .project-content{
+    width: 100%;
+
+}
+    .project-bg{
+    width: 100%;
+    height: 30%;
+    
+    
+    }
+} 
+
+@media screen and (max-width: 650px){
+    .project-element{
+    width: 400px;
+    height: 200px;
+    }
+    .project-link{
+   
+    height: 200px;
+    
+    }
+        .link{
+    
+    height: 200px;
+    a{
+        i{
+            font-size: 2em;
+           
+            }
+    }
+        }
+    .project-desc{
+        height: 200px;
+        p{
+        font-size: 1em;
+        }
+        }
+    
+}
+    @media screen and (max-width: 450px){
+    .project-element{
+    width: 300px;
+    height: 150px;
+    }
+    .project-link{
+   
+    height: 150px;
+    
+    }
+        .link{
+    
+    height: 150px;
+    a{
+        i{
+            font-size: 1.5em;
+           
+            }
+    }
+        }
+    .project-desc{
+        height: 150px;
+        h3{
+        font-size: 1em;
+        }
+        p{
+        font-size: 0.8em;
+
+        }
+        }
+    
+}
+@media screen and (max-width: 360px){
+
+    .project-desc{
+        
+        h3{
+        font-size: 0.8em;
+        }
+        p{
+        font-size: 0.6em;
+        
+        }
+        }
+   
+}

@@ -1,0 +1,80 @@
+.skills{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.8), 
+          rgba(0, 0, 0, 0.8)
+        ), 
+        url("../images/skills.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    h2{
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        color: $grey-lighter;
+        }
+    .line{
+        border-top: solid 2px $blue;
+        width: 100px;
+        padding-bottom: 35px;
+        }
+    p{
+        font-size: 1.5rem;
+        padding-bottom: 100px;
+        color: $grey-lighter;
+        
+        }        
+    }
+
+.skill-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+ .skill-element{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    background-color: rgba($grey, 0.8);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    img{
+        max-width: auto;
+        height: 80%;
+         }
+        h3{
+        padding-top: 20px;
+        color: $grey-lighter;  
+         }       
+     }       
+
+@media screen and (max-width: 650px){
+    .skills{
+    h2{
+        font-size: 2rem;
+        }
+    p{
+        font-size: 1.2rem;
+        padding-bottom: 40px;
+        
+        }     
+    }
+    }
+@media screen and (max-width: 390px){
+   .skill-element{
+     width: 250px;
+     height: 250px;
+   }
+}

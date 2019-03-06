@@ -1,0 +1,127 @@
+.nav{
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    transition: .4s ease-in-out;
+    z-index: 20;
+}
+.navbar-large{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: $dark;
+}
+.navbar-small{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.08);
+    background-color: $dark;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+}
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.button-toggle-nav{
+    width: 32px;
+    height: 32px;   
+    position: relative;
+    float: right;
+    background: transparent;
+    border: 0;
+    display: none;
+    outline: none;
+    cursor: pointer;
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        }
+    &:active{
+        border: none;
+        }
+    img{
+        height: 32px;
+        display: block;
+        }
+} 
+.navbar-menu {
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    padding:0;
+    transition: max-height 0.5s;
+    display: inline-block;
+  }
+
+.navbar-menu-li {
+    display: inline-block;
+    padding: 6px 15px 0 15px;
+  }
+  
+  
+.navbar-menu-a {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    transition: .15s ease-in-out;
+    color: #ffffff;
+    &:hover{
+        color: $blue;
+        }
+  }    
+.navbar-menu-active {
+    color: $blue;
+}
+
+
+@media screen and (max-width: 565px){
+
+    .navbar-large{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navbar-menu {
+        background: $dark;
+        max-height: 0;
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .navbar-menu-show {
+        max-height: 15rem;
+    }
+
+    .navbar-menu-li {
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .navbar-content{
+    justify-content: flex-end;
+    }
+
+    .button-toggle-nav {
+        display:inline;
+    }
+
+}
+
+    
