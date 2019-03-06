@@ -647,28 +647,28 @@ body {
 }
 
 .project-1 {
-  background-image: url("../images/project1.png");
+  background-image: url("../images/project1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .project-2 {
-  background-image: url("../images/project2.png");
+  background-image: url("../images/project2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .project-3 {
-  background-image: url("../images/project3.png");
+  background-image: url("../images/project3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .project-4 {
-  background-image: url("../images/project4.png");
+  background-image: url("../images/project4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
