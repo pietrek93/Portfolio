@@ -1,5 +1,4 @@
 .about{
-    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -63,7 +62,6 @@
         }
     .about-content{
         width: 100%;
-        height: 70%;
         padding: 20 20px;
         h2{
         font-size: 2rem;
